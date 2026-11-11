@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Keep the exe
+!SroSentry.exe
+
+# Keep repo meta
+!.gitignore
+!LICENSE
+!README.md
