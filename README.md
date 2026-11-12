@@ -1,76 +1,69 @@
 # SroSentry
 
-Desktop helper for **Silkroad Online private servers**.  
-Multi-account monitoring, auto-login, alarms, and live character stats.
+Desktop helper for **Silkroad Online private servers**.
+Multi-account monitoring, auto-login, alarms and live character stats.
 
-**Author:** Touched  
-**Current version:** 1.5
+**Author:** Touched
 
-Support for additional private servers is planned.
+Support for more private servers is planned.
 
 ---
 
 ## Features
 
-### Accounts
-- Account list (username / character)
-- Add / Edit / Delete accounts
-- Per-character options:
-  - Auto Login
-  - Auto Hunt
-  - Auto Hide
-- **Start / Stop Auto Login** (green = start, red = stop)
-- **Auto Login on Launch** — starts the system when the tool opens
-- **Startup with Windows** — runs with Windows
+### Characters
+- Character list with online status, drag to re-order
+- Add (single or bulk), edit, delete
+- Per-character options: Auto login, Auto hunt after login, Hide client after login
+- Start / stop the auto login system, start / kill / hide selected clients
 
-### Character info
+### Live info
 - Name, level, region, position
 - HP / MP / EXP bars
-- Gold
-- Pet time
-- Arrows status
-- Client version when the client is running
+- Gold, arrows, pet time (when the game values can be read)
 
 ### Alarms (per character)
-- No HP pots
-- No MP pots
-- No arrows
-- EXP stuck
+- No HP potions, no MP potions
+- Out of arrows
+- Not getting EXP
 - Dead with no revive
 - Disconnected
-- Level-up
-- Reach target level (checkbox + level box)
+- Level up
+- Reach target level
+- Optional: mute all alarms while you are using the PC
 
-### Events
-- Event alert window
-- Schedule loading with fallback
-- Optional sound / popup alerts
+### Event alerts
+- Event schedule with a time-left countdown for every event
+- Alerts when an event starts or 10 / 5 / 1 minutes before
+- Sound and Windows notifications, mute single events
+- Time offset setting if the schedule is off by an hour
 
-### App settings (global)
-- Theme: Default (Bronze) / Light / Dark
-- Minimize to tray
-- Potato PC mode
-- Combined log at the bottom of the main window
+### Auto update game (beta)
+- If clients keep closing right after they start, the tool can close them, run the game launcher so it patches, and start your clients again
 
-### Other
-- Single-instance app
-- Tray icon
-- Settings in `config.txt` (app) and `accounts.txt` (per character)
+### App
+- Dark / Light / Bronze themes, remembers its window size
+- Minimize to tray, Potato PC mode, start with Windows
+- Tooltips on every option
+- Updates itself: checks GitHub once a day when it starts
 
 ---
 
 ## Requirements
-- Windows
+- Windows 10 / 11
 - .NET Framework 4.8
-- Compatible game client on the same machine
+- Run as administrator (the tool reads game memory)
 
-## Run
-1. Place `SroSentry.exe` in your working folder (with `accounts.txt` / `config.txt` as needed).
-2. Run `SroSentry.exe`.
+## Install
+1. Put `SroSentry.exe` in your game folder, next to `SroMacroClient.exe`.
+2. Run `SroSentry.exe`. Your settings are saved in `accounts.txt` and `config.txt` in that folder.
+
+## Antivirus note
+SroSentry reads another program's memory (your game client), so some antivirus programs warn about it. Download it only from this page. You may need to add the game folder as an exclusion.
 
 ## Notes
 - For personal use with your own accounts on private servers you play.
-- Client updates may change memory layouts; a new build may be required after major client patches.
+- After big client patches, memory addresses can change and a new version may be needed.
 
 ## License
 See [LICENSE](LICENSE). All rights reserved.
