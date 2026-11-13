@@ -1,10 +1,9 @@
-# Ignore everything
+# SroSentry public releases repo: only these files are tracked.
+# The exe lives in GitHub Releases, not in the repo.
 *
-
-# Keep the exe
-!SroSentry.exe
-
-# Keep repo meta
 !.gitignore
 !LICENSE
 !README.md
+!latest.json
+!screenshots/
+!screenshots/**
