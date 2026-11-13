@@ -17,6 +17,9 @@ Support for more private servers is planned.
 - Per-character options: Auto login, Auto hunt after login, Hide client after login
 - Start / stop the auto login system, start / kill / hide selected clients
 
+### Status bar
+- Game client version, server status (online / offline) and alarm status at a glance
+
 ### Live info
 - Name, level, region, position
 - HP / MP / EXP bars
@@ -30,7 +33,7 @@ Support for more private servers is planned.
 - Disconnected
 - Level up
 - Reach target level
-- Optional: mute all alarms while you are using the PC
+- Mute all alarms while you are using the PC (alarms go on hold, then resume when you leave)
 
 ### Event alerts
 - Event schedule with a time-left countdown for every event
@@ -45,7 +48,7 @@ Support for more private servers is planned.
 - Dark / Light / Bronze themes, remembers its window size
 - Minimize to tray, Potato PC mode, start with Windows
 - Tooltips on every option
-- Updates itself: checks GitHub once a day when it starts
+- Updates itself: checks this page once a day when it starts
 
 ---
 
@@ -55,8 +58,9 @@ Support for more private servers is planned.
 - Run as administrator (the tool reads game memory)
 
 ## Install
-1. Put `SroSentry.exe` in your game folder, next to `SroMacroClient.exe`.
-2. Run `SroSentry.exe`. Your settings are saved in `accounts.txt` and `config.txt` in that folder.
+1. Download `SroSentry.exe` from the [Releases](../../releases) page.
+2. Put it in your game folder, next to `SroMacroClient.exe`.
+3. Run it. Your settings are saved in `accounts.txt` and `config.txt` in that folder.
 
 ## Antivirus note
 SroSentry reads another program's memory (your game client), so some antivirus programs warn about it. Download it only from this page. You may need to add the game folder as an exclusion.
