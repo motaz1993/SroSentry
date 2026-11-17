@@ -1,7 +1,7 @@
 {
   "name": "SroSentry",
-  "version": "1.9",
-  "version_code": 10900,
-  "download_url": "https://github.com/motaz1993/SroSentry/releases/download/1.9/SroSentry.exe",
-  "sha256": "eb07642c99e69272e19621e82d10a080923c18989f76bd31c6fc9c517186f684"
+  "version": "2.0a",
+  "version_code": 20001,
+  "download_url": "https://github.com/motaz1993/SroSentry/releases/download/2.0a/SroSentry.exe",
+  "sha256": "e24198a43ad02d98cb16c49ef24ef4899921b75ef57803a7efff6c5a6f592364"
 }
